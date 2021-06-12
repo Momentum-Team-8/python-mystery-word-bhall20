@@ -43,15 +43,15 @@ def run():
                     try_again = input("Play again? y/n\n")
                     if try_again == ("y"):
                         run()
-                    elif "n" in try_again:
-                        sys.exit()
+                    else:
+                        break
                 if tries == 8:
                     print("Sorry, you lose!")
                     try_again = input("Play again? y/n\n")
                     if try_again == ("y"):
                         run()
-                    elif "n" in try_again:
-                        sys.exit()
+                    else:
+                        break
                 else:
                     guess = input(f"Please guess 1 letter per round, {8-tries} times left to try!")
     
